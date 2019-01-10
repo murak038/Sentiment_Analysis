@@ -44,7 +44,7 @@ This will open the iPython Notebook software and project file in your browser.
 
 ## Results
 
-| Architecture        | Test Accuracy - 5 Epochs           | Test Accuracy - 10 Epochs  | Time to Train Epoch |
+| Architecture        | Test Accuracy % - 5 Epochs           | Test Accuracy % - 10 Epochs  | Time to Train Epoch |
 | ------------- |:-------------:| :-------------:| :-------------:|
 | QRNN      | 81.880 | 81.920 |  34.475 s  |
 | GRU      | 75.960      |  78.960 |  18.935 s  |
@@ -54,4 +54,7 @@ This will open the iPython Notebook software and project file in your browser.
 | CNN | 72.880     |  75.560 |  18.754 s  |
 
 ## Summary
-From the results seen above, the performance of the QRNN model was comparable to that of the multi-layer bidirectional LSTM while the training time is decreased by 40%. Additionally, while the GRU model and the CNN model took less time to train per epoch, the model requires more epochs for the model to achieve maximal performance.  
+From the results seen above, the performance of the QRNN model was comparable to that of the multi-layer bidirectional LSTM while the training time is decreased by 40%. Additionally, while the GRU model and the CNN model took less time to train per epoch, the model requires more epochs for the model to achieve maximal performance.  Additionally, the performance of the GRU and CNN models still performed less accurately than the more complex models. From the models tested during this implementation, the QRNN model performs the best in terms of time required to train the model and the performance on the validation dataset.
+
+![alt text](https://github.com/murak038/Sentiment_Analysis/blob/master/QRNN_Validation_10Epoch.png "Validation Accuracy of the Model")
+![alt text](https://github.com/murak038/Sentiment_Analysis/blob/master/QRNN_Training_10Epoch.png "Training Accuracy of the Model")
